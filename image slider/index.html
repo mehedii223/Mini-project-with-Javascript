@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="img-slider">
+            <img src="img/img1.jpg" id="img" class="active">
+            <img src="img/img2.jpg" id="img">
+            <img src="img/img3.jpg" id="img">
+            <img src="img/img4.jpg" id="img">
+        </div>
+        <div class="dot-btn">
+            <button class="bgDark" attr="0" onclick="switchImage(this)"></button>
+            <button attr="1" onclick="switchImage(this)"></button>
+            <button attr="2" onclick="switchImage(this)"></button>
+            <button attr="3" onclick="switchImage(this)"></button>
+        </div>
+        <button class="prev">&lt;</button>
+        <button class="next">&gt;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #201d1db2;
+}
+.container{
+    position: absolute;
+    width: 90%;
+    height: 700px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+
+img{
+    position: absolute;
+    width: 100%;
+    height: 90%;
+}
+
+.img-slider img:not(.active){
+    top: 0%;
+    left: -100%;
+}
+
+.dot-btn {
+	width: 30%;
+	height: 10%;
+	justify-content: space-around;
+	align-items: center;
+	box-sizing: border-box;
+	position: absolute;
+	bottom: 0;
+	left: 36%;
+    text-align: center;
+    padding-top: 20px;
+}
+.dot-btn button{
+    height: 15px;
+    width: 14px;
+    border: 2px solid #222020af;
+    border-radius: 50px;
+    background-color: transparent;
+}
+
+.bgDark{
+    background-color: #383131ce !important;
+}
+
+.prev, .next{
+	position: absolute;
+	top: 45%;
+	font-size: 25px;
+	font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 10px;
+    color: #fff;
+    transition: 0.4s;
+}
+.prev:hover, .next:hover{
+    background-color: #00000098;
+}
+.next {
+    right: 0;
+}
+
+
+
+/* animation next start */
+@keyframes next1{
+    from{
+        left: 0%;
+    }
+    to{
+        left: -100%;
+    }
+}
+@keyframes next2{
+    from{
+        left: 100%;
+    }
+    to{
+        left: 0%;
+    }
+}
+
+
+/* animation previous start */
+@keyframes prev1 {
+    from{
+        left: 0%;
+    }
+    to{
+        left: 100%;
+    }
+}
+@keyframes prev2 {
+    from{
+        left: -100%;
+    }
+    to{
+        left: 0%;
+    }
+}
